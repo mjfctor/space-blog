@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    margin: auto;
+    width: 85%;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: poppins, serif;
+}
+.navbar li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffd900;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar li a:hover::after{
+    width: 100%;
+}
+.nilalaman{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+    transform: translateY(-50%);
+
+}
+.nilalaman h1{
+    font-size: 70px;
+}
+.nilalaman p {
+    font-size: 20px;
+    margin: 10px auto;
+    font-weight: 100;
+}
+button{
+    width: 150px;
+    padding: 10px 0;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #00ff0c;
+    background: transparent;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #00ff0c;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
